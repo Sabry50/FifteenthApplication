@@ -26,7 +26,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
 
-class IslamMain extends AppCompatActivity {
+public class IslamMain extends AppCompatActivity {
 
     private ImageView mealImage;
     private EditText name , description , steps ;
