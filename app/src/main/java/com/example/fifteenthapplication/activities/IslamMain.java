@@ -1,5 +1,4 @@
 package com.example.fifteenthapplication.activities;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -27,7 +26,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
 
-class IslamMainActivity extends AppCompatActivity {
+class IslamMain extends AppCompatActivity {
 
     private ImageView mealImage;
     private EditText name , description , steps ;
@@ -113,7 +112,7 @@ class IslamMainActivity extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
 
                                 // startActivity( new Intent(  getApplicationContext() , HomeActivity1.class ) );
-                                Toast.makeText( IslamMainActivity.this, "Data successfully upload", Toast.LENGTH_SHORT ).show();
+                                Toast.makeText( IslamMain.this, "Data successfully upload", Toast.LENGTH_SHORT ).show();
                             }
                         } );
                     }
