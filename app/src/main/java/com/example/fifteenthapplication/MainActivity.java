@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String x = String.valueOf(ratingBar.getRating());
-                Toast.makeText(MainActivity.this,x+"Star",Toast.LENGTH_LONG).show();
+                Toast.makeText( IslamMainActivity.this,x+"Star",Toast.LENGTH_LONG).show();
             }
         });
 
