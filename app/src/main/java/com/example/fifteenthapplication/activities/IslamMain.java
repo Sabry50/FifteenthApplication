@@ -59,7 +59,7 @@ public class IslamMain extends AppCompatActivity {
         tvProgress.setVisibility( View.GONE );
         progressBar.setVisibility( View.GONE );
 
-        databaseRef = FirebaseDatabase.getInstance().getReference().push().child( "Meal" ).child( "breakfast" );
+        databaseRef = FirebaseDatabase.getInstance().getReference().child( "Meal" ).child( "breakfast" );
         storageRef = FirebaseStorage.getInstance().getReference().child( " MealImages" );
 
         mealImage.setOnClickListener( new View.OnClickListener() {
@@ -107,7 +107,7 @@ public class IslamMain extends AppCompatActivity {
                         hashMap.put( "Steps" , mealSteps );
                         hashMap.put( "ImageURL" , uri.toString() );
 
-                        databaseRef.child( key ).setValue( hashMap ).addOnSuccessListener( new OnSuccessListener<Void>() {
+                        databaseRef.push().child( key ).setValue( hashMap ).addOnSuccessListener( new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
 
